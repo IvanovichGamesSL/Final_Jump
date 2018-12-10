@@ -19673,7 +19673,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &289878866
 Transform:
   m_ObjectHideFlags: 0
@@ -37876,7 +37876,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &584413096
 Transform:
   m_ObjectHideFlags: 0
@@ -38205,7 +38205,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &593518498
 Transform:
   m_ObjectHideFlags: 0
@@ -54996,7 +54996,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &867271808
 Transform:
   m_ObjectHideFlags: 0
@@ -70159,7 +70159,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1107205411
 Transform:
   m_ObjectHideFlags: 0
@@ -77446,7 +77446,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1237173386
 Transform:
   m_ObjectHideFlags: 0
@@ -80037,7 +80037,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1286919000
 Transform:
   m_ObjectHideFlags: 0
@@ -84227,6 +84227,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1353917215}
+  - component: {fileID: 1353917216}
   m_Layer: 0
   m_Name: Character_Male_Hoodie_01 Root
   m_TagString: Untagged
@@ -84250,6 +84251,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1353917216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1353917214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a77b5f1ee5295543a531d6885e1361a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Rigidbody: {fileID: 1786918979}
+  m_Animator: {fileID: 1786918977}
+  fuerzaEmpuje: 5
+  direccionEmpuje: {fileID: 1692007907}
+  m_puppetMaster: {fileID: 1435806980}
 --- !u!1 &1356234559
 GameObject:
   m_ObjectHideFlags: 0
@@ -94202,7 +94219,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1500766846
 Transform:
   m_ObjectHideFlags: 0
@@ -99810,7 +99827,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1577950516
 Transform:
   m_ObjectHideFlags: 0
@@ -103731,7 +103748,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1638107758
 Transform:
   m_ObjectHideFlags: 0
@@ -104855,7 +104872,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1663725411
 Transform:
   m_ObjectHideFlags: 0
@@ -106630,7 +106647,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1687149031
 Transform:
   m_ObjectHideFlags: 0
@@ -106893,6 +106910,34 @@ Transform:
   m_Father: {fileID: 171866717}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1692007906
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1692007907}
+  m_Layer: 0
+  m_Name: DireccionEmpuje
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1692007907
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1692007906}
+  m_LocalRotation: {x: -0.46888918, y: -0, z: -0, w: 0.8832571}
+  m_LocalPosition: {x: 58.27, y: 16.258, z: 69.9}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 27
+  m_LocalEulerAnglesHint: {x: -55.924004, y: 0, z: 0}
 --- !u!4 &1692775055 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 454224, guid: 015249c005381134e896458eb3ed0bb1,
@@ -111839,8 +111884,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1786918976}
   - component: {fileID: 1786918977}
-  - component: {fileID: 1786918979}
   - component: {fileID: 1786918978}
+  - component: {fileID: 1786918979}
   m_Layer: 8
   m_Name: Character_Male_Hoodie_01
   m_TagString: Untagged
@@ -111883,7 +111928,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 25924a68378273e4f9b8f5cf143039e5, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -111915,7 +111960,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 32
   m_CollisionDetection: 0
 --- !u!1 &1787801029
 GameObject:
@@ -112554,7 +112599,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1791997825
 Transform:
   m_ObjectHideFlags: 0
@@ -114810,7 +114855,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1818775677
 Transform:
   m_ObjectHideFlags: 0
@@ -126909,7 +126954,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2010227784
 Transform:
   m_ObjectHideFlags: 0
@@ -131809,7 +131854,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2047728196
 Transform:
   m_ObjectHideFlags: 0
@@ -134761,7 +134806,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2115942184
 Transform:
   m_ObjectHideFlags: 0
