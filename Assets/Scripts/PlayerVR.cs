@@ -17,6 +17,8 @@ public class PlayerVR : MonoBehaviour {
 
     public float triggerDerecho;
 
+    public Transform posicionCabeza;
+
 
     // Use this for initialization
     void Start () {
@@ -32,9 +34,9 @@ public class PlayerVR : MonoBehaviour {
         manoIzquierda.localRotation = UnityEngine.XR.InputTracking.GetLocalRotation(UnityEngine.XR.XRNode.LeftHand);
         manoDerecha.localRotation = UnityEngine.XR.InputTracking.GetLocalRotation(UnityEngine.XR.XRNode.RightHand);
 
-        //if(Input.GetButtonDown("Fire2")) {
-        //    RecolocarPlayer();
-        //}
+        if (Input.GetButtonDown("Fire2")) {
+            RecolocarPlayer();
+        }
 
         triggerDerecho = Input.GetAxis("TriggerDerecho");
     }
@@ -42,12 +44,9 @@ public class PlayerVR : MonoBehaviour {
    
     
     public void RecolocarPlayer() {
-        Vector3 posCamara = cabeza.position;
-        posCamara.y = 1.5f;
+        Vector3 posCamara = posicionCabeza.position;
         Vector3 movimiento = posCamara - cabeza.position;
         transform.position += movimiento;
-       
-
     }
 
     
